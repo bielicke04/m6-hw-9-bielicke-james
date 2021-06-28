@@ -10,7 +10,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 /****** Fonts *******/
-/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif;*/
 
 /****** Styling *******/
 
@@ -20,20 +20,34 @@ body {
 	align-items: center;
 	height: 100vh;
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 120%;
 	background: url('img/bk-image2.jpg') no-repeat center center/cover;
 
 }
 
-.card {
-	background: #000000d0;
+h1.city {
+    font-size: 2rem;
+	font-weight: 300;
+}
+
+h2.temp {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+	color: #bf710c;
+	margin: -6px 0 4px;
+}
+
+.container {
+	background: #02394ee8;
 	color: #fff;
 	padding: 2em;
 	border-radius: 30px;
 	width: 100%;
 	max-width: 420px;
 	margin: 1em;
+	box-shadow: 0px 1px 13px 5px #011b259e;
 }
 
 .search {
@@ -47,9 +61,9 @@ input.search-bar {
 	outline: none;
 	padding: 0.4em 1em;
 	border-radius: 24px;
-	background: #7c7c7c2b;
+	background: #011e2966;
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 105%;
 	width: calc(100% - 100px);
 }
@@ -61,26 +75,42 @@ button {
 	height: 44px;
 	width: 44px;
 	outline: none;
-	background: #7c7c7c2b;
+	background: #011e2966;
 	color: #fff;
 	cursor: pointer;
-	transition: 0.2s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 button:hover {
-	background: #7c7c7c6b;
+	background: #06668a66;
 }
 
-.flex {
+.weather-box {
 	display: flex;
 	align-items: center;
 }
 
 .description {
+	font-family: 'Montserrat';
+	font-weight: 300;
+	font-size: 1.3rem;
 	text-transform: capitalize;
-	margin-left: 8px;
+    letter-spacing: .75px;
+    margin-left: 10px;
+    margin-top: 1px;
 }
 
-.weather.loading {
-	visibility: hidden;
+.humidity {
+    font-family: 'Montserrat';
+    font-size: 1.15rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+	margin: 6px 0 4px;
+}
+
+.feels {
+    font-family: 'Montserrat';
+    font-size: 1.15rem;
+    font-weight: 300;
+    letter-spacing: .5px;
 }
